@@ -78,33 +78,33 @@ your editor?
 
 - What files or folders do you want all git repositories to ignore?
 
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
+    -   *.com
+    -   *.class
+    -   *.dll
+    -   *.exe
+    -   *.o
+    -   *.so
 
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
+    -   *.7z
+    -   *.dmg
+    -   *.gz
+    -   *.iso
+    -   *.jar
+    -   *.rar
+    -   *.tar
+    -   *.zip
 
-*.log
-*.sql
-*.sqlite
+    -   *.log    
+    -   *.sql
+    -   *.sqlite
 
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+    -   .DS_Store
+    -   .DS_Store?
+    -   ._*
+    -   .Spotlight-V100
+    -   .Trashes
+    -   ehthumbs.db
+    -   Thumbs.db
 
 
 - What is the main difference between `Array.map` and `Array.forEach` in JavaScript?
