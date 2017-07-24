@@ -51,7 +51,7 @@ your editor?
         br = branch
         ci = commit
         st = status
-        
+
     ```
 
 - What is the difference between a relative and absolute path?
@@ -78,8 +78,8 @@ your editor?
 
 - What files or folders do you want all git repositories to ignore?
     ```
-    ### Compiled source 
------    
+### Compiled source 
+
 *.com
 *.class
 *.dll
@@ -88,7 +88,7 @@ your editor?
 *.so
 
 ### Packages 
-------
+
 *.7z
 *.dmg
 *.gz
@@ -99,13 +99,13 @@ your editor?
 *.zip
 
 ### Logs and databases 
------
+
 *.log
 *.sql
 *.sqlite
 
 ### OS generated files
------
+
 .DS_Store
 .DS_Store?
 ._*
@@ -116,5 +116,6 @@ Thumbs.db
 ```
 
 - What is the main difference between `Array.map` and `Array.forEach` in JavaScript?
+
     *   Array.forEach always returns a value of undefined type and is not chainable. Array.map utilizes a given callback function for each element in the array, and constructs a new array from the results of the callback function.
     
