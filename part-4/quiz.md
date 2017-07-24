@@ -78,16 +78,12 @@ your editor?
 
 - What files or folders do you want all git repositories to ignore?
 
-### Compiled source 
-
 *.com
 *.class
 *.dll
 *.exe
 *.o
 *.so
-
-### Packages 
 
 *.7z
 *.dmg
@@ -98,13 +94,9 @@ your editor?
 *.tar
 *.zip
 
-### Logs and databases 
-
 *.log
 *.sql
 *.sqlite
-
-### OS generated files
 
 .DS_Store
 .DS_Store?
