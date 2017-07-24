@@ -39,19 +39,19 @@ your editor?
     *   It returns nothing unless a completion message was expressly set.
 
 - What does your `~/.gitconfig` have in it? (paste the whole file here)
-    *
     ```
-    [user]
-	name = ontoneio
-	email = ontoneio.mm@gmail.com
-[core]
-	editor = fish
-	excludesfile = /Users/ontoneio/.gitignore_global
-[alias]
-	co = checkout
-	br = branch
-	ci = commit
-	st = status
+    *   [user]
+        name = ontoneio
+        email = ontoneio.mm@gmail.com
+    *   [core]
+        editor = fish
+        excludesfile = /Users/ontoneio/.gitignore_global
+    *   [alias]
+        co = checkout
+        br = branch
+        ci = commit
+        st = status
+        
     ```
 
 - What is the difference between a relative and absolute path?
@@ -77,9 +77,9 @@ your editor?
     *   Command + p
 
 - What files or folders do you want all git repositories to ignore?
-    *   ```
-    # Compiled source #
-###################
+    ```
+    ### Compiled source 
+-----    
 *.com
 *.class
 *.dll
@@ -87,10 +87,8 @@ your editor?
 *.o
 *.so
 
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
+### Packages 
+------
 *.7z
 *.dmg
 *.gz
@@ -100,14 +98,14 @@ your editor?
 *.tar
 *.zip
 
-# Logs and databases #
-######################
+### Logs and databases 
+-----
 *.log
 *.sql
 *.sqlite
 
-# OS generated files #
-######################
+### OS generated files
+-----
 .DS_Store
 .DS_Store?
 ._*
