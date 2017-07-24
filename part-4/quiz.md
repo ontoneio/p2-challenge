@@ -77,7 +77,7 @@ your editor?
     *   Command + p
 
 - What files or folders do you want all git repositories to ignore?
-    ```
+
 ### Compiled source 
 
 *.com
@@ -113,9 +113,8 @@ your editor?
 .Trashes
 ehthumbs.db
 Thumbs.db
-```
+
 
 - What is the main difference between `Array.map` and `Array.forEach` in JavaScript?
 
     *   Array.forEach always returns a value of undefined type and is not chainable. Array.map utilizes a given callback function for each element in the array, and constructs a new array from the results of the callback function.
-    
