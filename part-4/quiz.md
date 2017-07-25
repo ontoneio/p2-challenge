@@ -39,19 +39,19 @@ your editor?
     *   It returns nothing unless a completion message was expressly set.
 
 - What does your `~/.gitconfig` have in it? (paste the whole file here)
-    *
     ```
-    [user]
-	name = ontoneio
-	email = ontoneio.mm@gmail.com
-[core]
-	editor = fish
-	excludesfile = /Users/ontoneio/.gitignore_global
-[alias]
-	co = checkout
-	br = branch
-	ci = commit
-	st = status
+    *   [user]
+        name = ontoneio
+        email = ontoneio.mm@gmail.com
+    *   [core]
+        editor = fish
+        excludesfile = /Users/ontoneio/.gitignore_global
+    *   [alias]
+        co = checkout
+        br = branch
+        ci = commit
+        st = status
+
     ```
 
 - What is the difference between a relative and absolute path?
@@ -77,46 +77,36 @@ your editor?
     *   Command + p
 
 - What files or folders do you want all git repositories to ignore?
-    *   ```
-    # Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
 
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
+    -   *.com
+    -   *.class
+    -   *.dll
+    -   *.exe
+    -   *.o
+    -   *.so
 
-# Logs and databases #
-######################
-*.log
-*.sql
-*.sqlite
+    -   *.7z
+    -   *.dmg
+    -   *.gz
+    -   *.iso
+    -   *.jar
+    -   *.rar
+    -   *.tar
+    -   *.zip
 
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-```
+    -   *.log    
+    -   *.sql
+    -   *.sqlite
+
+    -   .DS_Store
+    -   .DS_Store?
+    -   ._*
+    -   .Spotlight-V100
+    -   .Trashes
+    -   ehthumbs.db
+    -   Thumbs.db
+
 
 - What is the main difference between `Array.map` and `Array.forEach` in JavaScript?
+
     *   Array.forEach always returns a value of undefined type and is not chainable. Array.map utilizes a given callback function for each element in the array, and constructs a new array from the results of the callback function.
-    
