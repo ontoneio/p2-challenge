@@ -1,0 +1,113 @@
+/* font-family: 'Luckiest Guy', cursive;  */
+
+/* GLOBALS  */
+body {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 16px;
+}
+
+/* PAGE HEADER Component  */
+
+.pg-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: .5% 2%;
+  padding: 0 1%;
+  border: 1px solid hsl(302, 58%, 36%);
+}
+
+/* GENRE NAVIGATION BOX  */
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+  padding-left: 2%;
+  border: 1px solid hsl(302, 58%, 36%);
+  background-color: hsl(302, 58%, 36%);
+}
+
+/* GENRE BREAKDOWN SECTIONS  */
+
+.genre-display {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 4;
+  margin-left: 2%;
+}
+.genre-section {
+  flex-direction: row;
+}
+.genre-section > table {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+td {
+  padding: .5rem;
+}
+th {
+  padding: .5rem;
+  text-align: left;
+}
+
+.fxC {
+  display: flex;
+  flex-direction: row;
+  margin: 0 2%;
+}
+.fxC > .col {
+  flex-direction: column;
+  flex-grow: 1;
+}
+.fxC > .shop {
+  flex-grow: 4;
+  margin-left: 2rem;
+}
+.space {
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+/* Section Info */
+
+
+
+/* Nav Section */
+.col h4 {
+  margin: .25rem 1rem;
+}
+.col header {
+  background-color: hsl(302, 58%, 36%) ;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.nav-border {
+  border: 1px solid hsl(302, 58%, 36%);
+}
+
+/* Components */
+
+.LG-font {
+  font-family: 'Luckiest Guy';
+}
+
+button {
+  width: 100px;
+  padding: .5rem
+}
+
+
+
+
+
+/* UTILITY CLASSES */
+/* * {
+   border: 1px solid red !important;
+} */
+ 
