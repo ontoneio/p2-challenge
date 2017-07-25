@@ -1,5 +1,5 @@
 
-module.exports {
+module.exports = {
 
         month(){
 
@@ -14,6 +14,6 @@ module.exports {
         },
 
         filterBetween() {
-            
+
         }
 }
