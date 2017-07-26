@@ -10,7 +10,6 @@ if (!companyName) {
     // console.log(clients);
 }
 
-
 function getCompany(data, val) {
     var value = val
     var re = new RegExp(value, 'gi')
@@ -27,9 +26,5 @@ function getCompany(data, val) {
             results.push({Id,Company,Phone})
         }
     }
-
-    console.log(results);  
-
+    console.log(results);
 }
-
-

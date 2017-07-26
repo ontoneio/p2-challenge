@@ -7,10 +7,7 @@ if (!city) {
 } else {
     console.log(`Finding cities with name "${city}"...`);
     getCity(clients, city)
-}
-    
-
-
+}   
 
 function getCity(data, val) {
 
@@ -33,5 +30,3 @@ function getCity(data, val) {
     }
     console.log(results);
 }
-
-
