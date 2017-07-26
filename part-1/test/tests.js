@@ -5,11 +5,11 @@ const expect = require('chai').expect;
 
 
 describe("Phase 2 part-1 functions", 
-() => {
+function() {
 
-    describe("month()", () => {
+    describe("month()", function() {
         it("Returns month name of given date object", 
-        () => {
+        function() {
             let testDate1 = new Date('January 1, 1987')
             let testDate2 = new Date(2005, 5, 14)
             let testDate3 = new Date('2017 04 24')
@@ -23,35 +23,38 @@ describe("Phase 2 part-1 functions",
             expect(monthResult3).to.be.string('APRIL')
             
         })
-            // console.log(monthResult1, monthResult2, monthResult3);
     })
 
-    describe("reverseSentence()", () => {
+    describe("reverseSentence()", function() {
         it("Reverses the given string of characters", 
-        () => {
-            var result = funk.reverseSentence("The sun comes up.")
-            expect(result).to.have.string("up. comes sun The")
+        function() {
+            var resultPass1 = funk.reverseSentence("The sun comes up.")
+            var resultPass2 = funk.reverseSentence("Take names and chew bubblegum")
+
+            expect(resultPass1).to.have.string("up. comes sun The")
+            expect(resultPass2).to.have.string("bubblegum chew and names Take")
         })
-            // console.log(result);
     })
 
-    describe("propNames()", () => {
+    describe("propNames()", function() {
         it("Lists all properties of an object in alphabetical order", 
-        () => {
-            var testObj = { C: 3, D: 4, B: 2, A: 1 }
+        function() {
+            var testObj = { 'C': 3, 'D': 4, 'B': 2, 'A': 1 }
 
             var resultNames = funk.propNames(testObj)
             
-            expect(resultNames).to.be.an('object').that.has.all.keys('A','B','C','D')
+            expect(resultNames).to.be.an('array').to.have.members(['A', 'B', 'C', 'D'])
         })
-            // console.log(resultNames);
     })
 
-    describe("filterBetween()", () => {
+    describe("filterBetween()", function() {
         it("returns a new array with only the elements after min alphabetically and before max.",
-         () => {
-            var filResults = funk.filterBetween()
-            expect()
+         function() {
+
+            var animals = ['pig', 'rat', 'cat', 'dog', 'mice', 'ant', 'zebra', 'goat', 'whale']
+            var filResults = funk.filterBetween(animals, 'demon', 'pug')
+
+            expect(filResults).to.include.ordered.members(['dog', 'goat', 'mice', 'pig'])
         })
     })
 } )
