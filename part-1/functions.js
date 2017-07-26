@@ -11,8 +11,8 @@ module.exports = {
 
             if (monthNames[time1] !== undefined) {
                 return monthNames[time1]
-    }          
-} ,
+            }          
+        } ,
         
         reverseSentence(str) {
             var splitRev = str.split(" ").reverse()
