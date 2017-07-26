@@ -37,11 +37,17 @@ function() {
     describe("propNames()", function() {
         it("Lists all properties of an object in alphabetical order", 
         function() {
-            var testObj = { 'C': 3, 'D': 4, 'B': 2, 'A': 1 }
+            var testObj1 = { 'C': 3, 'D': 4, 'B': 2, 'A': 1 }
+            var testObj2 = { 'Z': 3, 'X': 4, 'Y': 2, 'T': 1 }
+            var testObj3 = { 'E-bay': 3, 'Yahoo': 4, 'Google': 2, 'Amazon': 1 }
 
-            var resultNames = funk.propNames(testObj)
+            var resultNames1 = funk.propNames(testObj1)
+            var resultNames2 = funk.propNames(testObj2)
+            var resultNames3 = funk.propNames(testObj3)
             
-            expect(resultNames).to.be.an('array').to.have.members(['A', 'B', 'C', 'D'])
+            expect(resultNames1).to.be.an('array').to.have.members(['A', 'B', 'C', 'D'])
+            expect(resultNames2).to.be.an('array').to.have.members(['T', 'X', 'Y', 'Z'])
+            expect(resultNames3).to.be.an('array').to.have.members(['Amazon', 'E-bay', 'Google', 'Yahoo'])
         })
     })
 

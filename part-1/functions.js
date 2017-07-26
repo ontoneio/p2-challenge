@@ -20,7 +20,7 @@ module.exports = {
         },
 
         propNames(obj) {
-            var pNames = obj.getOwnPropertyNames().sort()
+            var pNames = Object.getOwnPropertyNames(obj).sort()
             return pNames        
         },
 
