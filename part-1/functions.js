@@ -4,16 +4,15 @@ module.exports = {
 
         month(date){
             var monthNames = ["JANUARY", "FEBRUARY",
-        "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST",
-        "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"]
-            var time = moment().month(date)
-            var time = time - 1
+            "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST",
+            "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"]
+            var time = new Date(date).getMonth()
+            var time1 = time > 0 ? time - 1: time + 0 ;
 
-            if (monthNames[time] !== undefined) {
-                return monthNames[time]
-            }           
-                     
-        },
+            if (monthNames[time1] !== undefined) {
+                return monthNames[time1]
+    }          
+} ,
         
         reverseSentence(str) {
             var splitRev = str.split(" ").reverse()

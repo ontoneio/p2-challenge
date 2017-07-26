@@ -10,17 +10,15 @@ function() {
     describe("month()", function() {
         it("Returns month name of given date object", 
         function() {
-            let testDate1 = new Date('January 1, 1987')
-            let testDate2 = new Date(2005, 5, 14)
-            let testDate3 = new Date('2017 04 24')
+
+            let testDate1 = new Date(1987, 1, 1)
+            let testDate2 = new Date(2017, 04, 24)
 
             var monthResult1 = funk.month(testDate1)
             var monthResult2 = funk.month(testDate2)
-            var monthResult3 = funk.month(testDate3)
 
             expect(monthResult1).to.be.string('JANUARY')
-            expect(monthResult2).to.be.string('MAY')
-            expect(monthResult3).to.be.string('APRIL')
+            expect(monthResult2).to.be.string('APRIL')
             
         })
     })
@@ -52,9 +50,13 @@ function() {
          function() {
 
             var animals = ['pig', 'rat', 'cat', 'dog', 'mice', 'ant', 'zebra', 'goat', 'whale']
-            var filResults = funk.filterBetween(animals, 'demon', 'pug')
+            var animals1 = ['pig', 'rat', 'cat', 'dog', 'mice', 'ant', 'zebra', 'goat', 'whale']
 
-            expect(filResults).to.include.ordered.members(['dog', 'goat', 'mice', 'pig'])
+            var filResults1 = funk.filterBetween(animals, 'demon', 'pug')
+            var filResults2 = funk.filterBetween(animals1, 'lice', 'xantus')
+
+            expect(filResults1).to.include.ordered.members(['dog', 'goat', 'mice', 'pig'])
+            expect(filResults2).to.include.ordered.members(['mice', 'pig', 'rat', 'whale'])
         })
     })
 } )
